@@ -1,0 +1,29 @@
+levels
+	running an os
+	running code directly
+		compiling code in the ide
+		running python on a raspberry pi pico
+
+interfaces
+
+overhead
+
+most well known microcontrollers
+
+raspberry pi pico focus
+
+simple starter project
+	interfacing an arduino with a raspberry pi to send stuff between them
+	to showcase: 	functions
+			analog io
+			i2c
+			making custom comms
+			usecases in automation
+			interfacing arduino with fullsize raspberry pi zero
+			running website on raspi zero
+			showing data from the arduino on said website
+	
+
+	or:	connect two computers with using raspi picos and create second network
+		routing using said "network cards
+		sending simple messages over a wire using my custom protocol
