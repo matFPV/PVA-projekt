@@ -18,17 +18,41 @@
     - run compiled c
 
 - raspberry pi uses their own rp2040 cpu
-    - run compiled c or an interpreter of your choice so you can run higher level languages without recompiling for every itteration
-
-
-
+    - run hex files compiled from c or an interpreter of your choice so you can run higher level languages without recompiling for every itteration
 
 ---
 
-# usecases #
+### programming ###
+- direct (raspberry pi pico)
+    - the main processor is used to write code to the microcontrollers program memory
+- external bootloader (most arduinos)
+    - there is a second microprocessor used for writing code to the program memory 
+
+---
+
+### usecases ###
 - embeded electronics
 - automation
 - making things that shouldnt be smart smart anyways
+
+- by generally being made in many different configurations, adding to the fact that theres many companies developing, manufacturing and selling microcontrollers. Microcontrollers offer nearly the best cost efficiency for the given usecase
+- a microcontrollers power efficiency is also much greater than that of an sbc or a traditional computer as the device does very few unnecesary operations
+- since they have no operating system and very few components to manage the processor, even though small, can focus on only your code giving most microcontrollers a great response time especially in real world, latency dependent usecases. this is one of the most percievable differences
+
+
+## technologies used in the project explained ##
+### PWM ###
+- pwm (pulse width modulation)
+    - a way to transmit data over a single wire
+    - broad term for modulating voltage by quickly modulating(turning on and off) a set voltage, for example a half pulse of 5v is 2,5v because if we send 5v half of the time and flatten the end curve we end up with a relatively stable half of the original voltage
+    -provides one way communication
+
+
+### I2C ###
+- I2C
+    - a simple and often used way to interface two digital devidces providing bi-directional communication
+    - most modern microcontrollers have one or more i2c interfaces as we often require multiple i2c devices with the microcontroller only serving as a middleman in the flow of data
+
 
 ----
 
